@@ -16,21 +16,17 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <div className="navbar">
-      </div>
-        <Navbar />
         <main className="py-1">
-          <Routes>
-            <Route
-              path="/"
-              element={<Main/>}
-            />
+          {/* <Navbar/> */}
+        <Routes>
+            <Route path="/" element={<Main/>} />
           </Routes>
+          <Routes></Routes>
           <Routes>
             <Route path="/main" element={<Main/>} />
           </Routes>
           <Routes>
-            <Route path="/home" element={<Home/>} />
+            <Route path="/home" element={<Main/>} />
           </Routes>
           <Routes>
             <Route path="/about" element={<About/>}/>

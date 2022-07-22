@@ -1,11 +1,62 @@
 import React from "react";
 import pic1 from "../images/About_img.png";
 import pic2 from "../images/teamLead.jpg";
+import { Link } from "react-router-dom";
 class About extends React.Component {
   state = {};
   render() {
+    const myStyle1 = {
+      color: "#2e8b57",
+      fontFamily: "Cochin",
+    };
     return (
       <>
+      <div style={{backgroundColor: "#d3d3d3"}}>
+      <nav className={`navbar navbar-inverse navbar-expand-lg`}>
+            <div className="container-fluid mr-5 px-5">
+            <Link className="nav-link" to="/home" style={{fontSize: "30px", color: "#006400", fontWeight: "600"}}>
+                      Job Hunter
+                    </Link>
+              <div
+                className="collapse navbar-collapse "
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav ms-auto mb-lg-0">
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link active"
+                      aria-current="page"
+                      to="/Home"
+                      style={myStyle1}
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/about" style={myStyle1}>
+                      About
+                    </Link>
+                  </li>
+                  <div
+                className="btn-group btn-group-sm"
+                role="group"
+                aria-label="First group"
+              >
+                <button type="button" className="btn btn-secondary" style={{backgroundColor: "white",  color: "#006400"}}>
+                <Link className="nav-link" to="/JobSeeker" style={{backgroundColor: "white",  color: "#006400"}}>
+                      Student Login
+                    </Link>
+                </button>
+                <button type="button" className="btn btn-success" >
+                <Link className="nav-link" to="/JobProvider"style={{color: "white"}} >
+                      Industry Login
+                    </Link>
+                </button>
+              </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <div className="row px-4 py-4 justify-content-center">
           <div className="col-sm-6 mt-5 px-4 py-4">
             <h1 style={{ fontWeight: "bold", color: "#006400" }}>About Us</h1>
@@ -31,7 +82,7 @@ class About extends React.Component {
               src={pic1}
               alt="..."
               style={{ width: "300px", height: "400px" }}
-              class="center mt-5"
+              class="center mt-5 img-responsive"
             />
           </div>
         </div>
@@ -252,6 +303,7 @@ class About extends React.Component {
             </div>
           </div>
         </div>
+      </div>
       </>
     );
   }

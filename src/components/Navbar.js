@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export default function navbar(props) {
   let myStyle = {
     color: "#006400",
+    fontFamily: "Cochin",
   };
   return (
     <>
@@ -11,23 +12,14 @@ export default function navbar(props) {
         className={`navbar navbar-inverse navbar-expand-lg bg-${props.mode}`}
       >
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/Main" style={myStyle}>
+          <h2 style={myStyle} className="ml-5">
             Job Hunter
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            style={myStyle}
+          </h2>
+          <div
+            className="collapse navbar-collapse "
+            id="navbarSupportedContent"
           >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto mb-lg-0">
               <li className="nav-item">
                 <Link
                   className="nav-link active"
@@ -43,17 +35,7 @@ export default function navbar(props) {
                   About
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/JobProvider" style={myStyle}>
-                  Recruiter
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/JobSeeker" style={myStyle}>
-                  Job Seekers
-                </Link>
-              </li>
-              <div className="dropdown ml-5">
+              {/* <div className="dropdown ml-5">
                 <button
                   className="btn btn-success dropdown-toggle "
                   type="button"
@@ -78,6 +60,18 @@ export default function navbar(props) {
                     </Link>
                   </li>
                 </ul>
+              </div> */}
+              <div
+                className="btn-group mr-2"
+                role="group"
+                aria-label="First group"
+              >
+                <button type="button" className="btn btn-secondary">
+                  Student Login
+                </button>
+                <button type="button" className="btn btn-secondary">
+                  Industry Login
+                </button>
               </div>
             </ul>
           </div>
@@ -86,4 +80,3 @@ export default function navbar(props) {
     </>
   );
 }
-

@@ -4,6 +4,7 @@ class Footer extends React.Component {
     render() { 
         return (
             <>
+            <div style={{backgroundColor: "#d3d3d3"}}>
             <footer className="text-center text-lg-start bg-light text-muted">
         {/* Section: Social media */}
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -99,6 +100,7 @@ class Footer extends React.Component {
         {/* Copyright */}
       </footer>
       {/* Footer */}
+            </div>
             </>
         );
     }

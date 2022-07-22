@@ -1,5 +1,8 @@
-*{
+/* *{
   background-color: #d3d3d3;
+} */
+.font-link{
+  font-family: 'Baloo Tammudu 2', cursive;
 }
 .center{
   text-align: center;
@@ -15,6 +18,9 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+[data-overlay="8"]:before {
+  opacity: 0.8;
 }
 
 @media (prefers-reduced-motion: no-preference) {
