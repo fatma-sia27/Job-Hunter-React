@@ -1,10 +1,15 @@
 import React from "react";
 import pic1 from "../images/About_img.png";
-import pic2 from "../images/teamLead.jpg";
+import pic2 from "../images/aasPic.png";
+import pic3 from "../images/tannuPic.png";
 import { Link } from "react-router-dom";
 class About extends React.Component {
   state = {};
   render() {
+    const myStyle = {
+      color: "white",
+      fontFamily: "Cochin",
+    };
     const myStyle1 = {
       color: "#2e8b57",
       fontFamily: "Cochin",
@@ -35,6 +40,11 @@ class About extends React.Component {
                   <li className="nav-item">
                     <Link className="nav-link" to="/about" style={myStyle1}>
                       About
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/contact us" style={myStyle1}>
+                      Contact Us
                     </Link>
                   </li>
                   <div
@@ -92,45 +102,9 @@ class About extends React.Component {
         {/* ALl team member details */}
 
         <div className="row row-cols-1 row-cols-md-3 g-4 px-4 py-4 ms-5">
-          {/* Vaibhav kumar details */}
-
-          <div className="col">
-            <div className="card" style={{ width: "18rem" }}>
-              <img
-                src={pic2}
-                className="card-img-top"
-                alt="..."
-                style={{ width: "285px" }}
-              />
-              <div className="card-body" style={{ backgroundColor: "#2f4f4f" }}>
-                <h5
-                  className="card-title"
-                  style={{ backgroundColor: "#2f4f4f", color: "white" }}
-                >
-                  Vaibhav Kumar (Team Leader)
-                </h5>
-                <p
-                  className="card-text"
-                  style={{
-                    backgroundColor: "#2f4f4f",
-                    color: "white",
-                    fontFamily: "Cochin",
-                  }}
-                >
-                  A 4th year Undergraduate student at BIT Mesra. A coding
-                  enthusists. A MERN developer and have experience of 1 year in
-                  this field.
-                </p>
-                <button type="button" class="btn btn-light">
-                  Connect with Vaibhav
-                </button>
-              </div>
-            </div>
-          </div>
-
           {/* Aasia fatma details */}
 
-          <div className="col">
+          <div className="col center">
             <div className="card" style={{ width: "18rem" }}>
               <img
                 src={pic2}
@@ -139,12 +113,12 @@ class About extends React.Component {
                 style={{ width: "285px" }}
               />
               <div className="card-body" style={{ backgroundColor: "#2f4f4f" }}>
-                <h5
+                <h4
                   className="card-title"
-                  style={{ backgroundColor: "#2f4f4f", color: "white" }}
+                  style={{ backgroundColor: "#2f4f4f", color: "#deb887" }}
                 >
                   Aasia Fatma
-                </h5>
+                </h4>
                 <p
                   className="card-text"
                   style={{
@@ -154,7 +128,7 @@ class About extends React.Component {
                   }}
                 >
                   A 3rd year Undergraduate student at BIT Mesra. A coding
-                  enthusists. A React Js developer and open-source contributer.
+                  enthusists. A React Js developer. 
                 </p>
                 <button type="button" class="btn btn-light">
                   Connect with Aasia
@@ -163,23 +137,23 @@ class About extends React.Component {
             </div>
           </div>
 
-          {/* Saumya chauhan details */}
+          {/* Tannu pria details */}
 
-          <div className="col">
+          <div className="col center">
             <div className="card" style={{ width: "18rem" }}>
               <img
-                src={pic2}
+                src={pic3}
                 className="card-img-top"
                 alt="..."
-                style={{ width: "285px" }}
+                style={{ width: "285px", height: "250px" }}
               />
               <div className="card-body" style={{ backgroundColor: "#2f4f4f" }}>
-                <h5
+                <h4
                   className="card-title"
-                  style={{ backgroundColor: "#2f4f4f", color: "white" }}
+                  style={{ backgroundColor: "#2f4f4f", color: "#deb887" }}
                 >
-                  Saumya Chauhan
-                </h5>
+                  Tannu Priya
+                </h4>
                 <p
                   className="card-text"
                   style={{
@@ -189,115 +163,10 @@ class About extends React.Component {
                   }}
                 >
                   A 3rd year Undergraduate student at BIT Mesra. A coding
-                  enthusists. A Web developer.
+                  enthusists. A MERN developer. 
                 </p>
                 <button type="button" class="btn btn-light">
-                  Connect with Saumya
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Priyanshu roy details */}
-
-          <div className="col">
-            <div className="card" style={{ width: "18rem" }}>
-              <img
-                src={pic2}
-                className="card-img-top"
-                alt="..."
-                style={{ width: "285px" }}
-              />
-              <div className="card-body" style={{ backgroundColor: "#2f4f4f" }}>
-                <h5
-                  className="card-title"
-                  style={{ backgroundColor: "#2f4f4f", color: "white" }}
-                >
-                  Priyanshu Roy
-                </h5>
-                <p
-                  className="card-text"
-                  style={{
-                    backgroundColor: "#2f4f4f",
-                    color: "white",
-                    fontFamily: "Cochin",
-                  }}
-                >
-                  A 3rd year Undergraduate student at BIT Mesra. A coding
-                  enthusists. A Competitive Programmer.
-                </p>
-                <button type="button" class="btn btn-light">
-                  Connect with Priyanshu
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Shreya shanakr details */}
-
-          <div className="col">
-            <div className="card" style={{ width: "18rem" }}>
-              <img
-                src={pic2}
-                className="card-img-top"
-                alt="..."
-                style={{ width: "285px" }}
-              />
-              <div className="card-body" style={{ backgroundColor: "#2f4f4f" }}>
-                <h5
-                  className="card-title"
-                  style={{ backgroundColor: "#2f4f4f", color: "white" }}
-                >
-                  Shreya Shankar
-                </h5>
-                <p
-                  className="card-text"
-                  style={{
-                    backgroundColor: "#2f4f4f",
-                    color: "white",
-                    fontFamily: "Cochin",
-                  }}
-                >
-                  A 3rd year Undergraduate student at BIT Mesra. A coding
-                  enthusists. A Web developer .
-                </p>
-                <button type="button" class="btn btn-light">
-                  Connect with Shreya
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Aayushi Jaiswal details */}
-
-          <div className="col">
-            <div className="card" style={{ width: "18rem" }}>
-              <img
-                src={pic2}
-                className="card-img-top"
-                alt="..."
-                style={{ width: "285px" }}
-              />
-              <div className="card-body" style={{ backgroundColor: "#2f4f4f" }}>
-                <h5
-                  className="card-title"
-                  style={{ backgroundColor: "#2f4f4f", color: "white" }}
-                >
-                  Aayushi Jaiswal
-                </h5>
-                <p
-                  className="card-text"
-                  style={{
-                    backgroundColor: "#2f4f4f",
-                    color: "white",
-                    fontFamily: "Cochin",
-                  }}
-                >
-                  A 3rd year Undergraduate student at BIT Mesra. A coding
-                  enthusists. A Web developer .
-                </p>
-                <button type="button" class="btn btn-light">
-                  Connect with Aayushi
+                  Connect with Tannu
                 </button>
               </div>
             </div>

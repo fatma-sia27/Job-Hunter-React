@@ -9,36 +9,24 @@ import JobProvider from "./components/JobProvider";
 import JobSeeker from "./components/JobSeeker";
 import Footer from "./components/footer";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {BrowserRouter, Switch, Route, Link, Routes} from "react-router-dom";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   
   return (
     <>
-      <BrowserRouter>
-        <main className="py-1">
-          {/* <Navbar/> */}
-        <Routes>
-            <Route path="/" element={<Main/>} />
-          </Routes>
-          <Routes></Routes>
-          <Routes>
-            <Route path="/main" element={<Main/>} />
-          </Routes>
-          <Routes>
-            <Route path="/home" element={<Main/>} />
-          </Routes>
-          <Routes>
-            <Route path="/about" element={<About/>}/>
-          </Routes>
-          <Routes>
-            <Route path="/JobProvider" element={<JobProvider/>} />
-          </Routes>
-          <Routes>
-            <Route path="/jobSeeker" element={<JobSeeker/>}/>
-          </Routes>
-          </main>
-      </BrowserRouter>
+     <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Main/>} />
+      <Route path="home" element={<Main/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/JobSeeker" element={<JobSeeker />} />
+      <Route path="/JobProvider" element={<JobProvider />} />
+      <Route path="/Recruiter" element={<JobProvider />} />
+      <Route path="/contact%20us" element={<ContactUs />} />
+    </Routes>
+    </BrowserRouter>
       <Footer/>
     </>
   );

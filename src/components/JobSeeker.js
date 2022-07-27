@@ -39,6 +39,11 @@ class JobSeeker extends React.Component {
                       About
                     </Link>
                   </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/contact us" style={myStyle}>
+                      Contact Us
+                    </Link>
+                  </li>
                   <div
                 className="btn-group btn-group-sm"
                 role="group"

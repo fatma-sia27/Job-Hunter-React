@@ -30,14 +30,19 @@ class JobProvider extends React.Component {
                       className="nav-link active"
                       aria-current="page"
                       to="/Home"
-                      style={myStyle1}
+                      style={myStyle}
                     >
                       Home
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/about" style={myStyle1}>
+                    <Link className="nav-link" to="/about" style={myStyle}>
                       About
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/contact us" style={myStyle}>
+                      Contact Us
                     </Link>
                   </li>
                   <div
