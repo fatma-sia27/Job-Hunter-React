@@ -16,10 +16,10 @@ function App() {
   
   return (
     <>
-    <Main/>
+    
      <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Main/>} />
+      <Route exact path="/" element={<Main/>} />
       <Route path="home" element={<Main/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/JobSeeker" element={<JobSeeker />} />
