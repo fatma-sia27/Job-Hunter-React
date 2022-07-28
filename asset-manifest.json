@@ -1,7 +1,7 @@
 {
   "main.css": "/Job-Hunter-React/static/css/main.32c2243a.chunk.css",
-  "main.js": "/Job-Hunter-React/static/js/main.106514fd.chunk.js",
-  "main.js.map": "/Job-Hunter-React/static/js/main.106514fd.chunk.js.map",
+  "main.js": "/Job-Hunter-React/static/js/main.24ae64db.chunk.js",
+  "main.js.map": "/Job-Hunter-React/static/js/main.24ae64db.chunk.js.map",
   "static/js/1.8f2f4211.chunk.js": "/Job-Hunter-React/static/js/1.8f2f4211.chunk.js",
   "static/js/1.8f2f4211.chunk.js.map": "/Job-Hunter-React/static/js/1.8f2f4211.chunk.js.map",
   "static/js/2.ed41a516.chunk.js": "/Job-Hunter-React/static/js/2.ed41a516.chunk.js",
@@ -23,6 +23,6 @@
   "static/media/recruiter_img.png": "/Job-Hunter-React/static/media/recruiter_img.72e486ae.png",
   "static/css/main.32c2243a.chunk.css.map": "/Job-Hunter-React/static/css/main.32c2243a.chunk.css.map",
   "index.html": "/Job-Hunter-React/index.html",
-  "precache-manifest.70ca97a70772155ba2a00f1b0d4ae063.js": "/Job-Hunter-React/precache-manifest.70ca97a70772155ba2a00f1b0d4ae063.js",
+  "precache-manifest.38af13dd96a42b7670b111d91b03513d.js": "/Job-Hunter-React/precache-manifest.38af13dd96a42b7670b111d91b03513d.js",
   "service-worker.js": "/Job-Hunter-React/service-worker.js"
 }
