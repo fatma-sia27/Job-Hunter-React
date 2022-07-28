@@ -16,6 +16,7 @@ function App() {
   
   return (
     <>
+    <Main/>
      <BrowserRouter>
     <Routes>
       <Route path="/" element={<Main/>} />
