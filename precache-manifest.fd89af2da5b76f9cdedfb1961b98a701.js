@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "24ae64db41a3dcdd1d9a",
+    "revision": "4ccbef4a6d172d1d3a13",
     "url": "/Job-Hunter-React/static/css/main.32c2243a.chunk.css"
   },
   {
-    "revision": "24ae64db41a3dcdd1d9a",
-    "url": "/Job-Hunter-React/static/js/main.24ae64db.chunk.js"
+    "revision": "4ccbef4a6d172d1d3a13",
+    "url": "/Job-Hunter-React/static/js/main.4ccbef4a.chunk.js"
   },
   {
     "revision": "8f2f4211b0891106f089",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/Job-Hunter-React/static/media/recruiter_img.72e486ae.png"
   },
   {
-    "revision": "dd47f4bcf6dfc7ac55b8d3dcabc66be2",
+    "revision": "7a5fac92ee0267adf7748470da8266ec",
     "url": "/Job-Hunter-React/index.html"
   }
 ];
